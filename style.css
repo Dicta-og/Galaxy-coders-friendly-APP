@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    display: flex;
+    background: powderblue;
+}
+h1{
+    font-size: small;
+}
+.sidebar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 240px;
+    height: 100vh;
+    padding: 0 1.7rem;
+    color: white;
+    background-color: blue;
+    overflow: hidden;
+    transition: 0.5s linear;
+}
+.sidebar :hover{
+    width: 110px;
+    transition: 0.5s;
+    background: white;
+}
+.logo{
+    height: 80px;
+    padding: 16px;
+}
+.menu{
+    padding:5 ;
+    height:20% ;
+    list-style: none;
+    position: relative;
+}
+.menu li{
+    padding: 1rem;
+    margin: 8px 0;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+    list-style: none;
+}
+.menu li:hover .reactive{
+    background: red;
+}
+.menu a{
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+.menu a span{
+    overflow: hidden;
+              
+}
+.menu img{
+    font-size: 1.2rem;
+}
+.logout{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+}
+.main{
+    padding: 30px;
+    background: powderblue;
+    border-bottom: 20px;
+}
+
+.header-wrapper{
+    display: flex;
+    gap: 300px;
+    width: 110px;
+    height: 100px;
+}
+.input-image{
+    display: flex;
+    width: 60px;
+    height: 30px;
+    background:transparent;
+    border-radius: 10px;
+    top: 5px;
+    left: 0;
+    padding: 5px;
+  
+    align-items: center;    
+}
+.input-image img{
+    width: 15px;
+    background: powderblue;
+    cursor: pointer;
+    transition: all0.5s;
+    
+    }
+    .input-image:hover  img{
+                 background: red;
+                 transform: scale(1.2);
+    }
+
+.input-image input{
+    padding: 5px;
+    background: transparent;  
+    padding: 10px; 
+}
+
+.human{
+    display: flex;
+    font-size: 1.2rem;
+    height: 15px;
+    border-radius: 50px;
+    border: 5px;
+    position: relative;
+
+}
+.human img{
+    width: 40px;
+    position: absolute;
+    height: 15px;
+}
+.human input{
+}
